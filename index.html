@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>UnusualQuiz:WebApp</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 id="head">Unusual Quiz : Web App</h1>
+        <p id="detail">It contain coding related question. after move forword you can not move previous question so please make sure before cliking on next button.</p>
+        <button id="start">start</button>
+        <div id="container">
+            <h3 id="que"></h3>
+
+            <label for="ans1">
+                <div class="box1 box"><input type="radio" name="ans" value="a" id="ans1"><span id="opt1"></span></div>
+            </label>
+
+            <label for="ans2">
+                <div class="box2 box"><input type="radio" name="ans" value="b" id="ans2"><span id="opt2"></span></div>
+            </label>
+
+            <label for="ans3">
+                <div class="box3 box"><input type="radio" name="ans" value="c" id="ans3"><span id="opt3"></span></div>
+            </label>
+
+            <label for="ans4">
+                <div class="box4 box"><input type="radio" name="ans" value="d" id="ans4"><span id="opt4"></span></div>
+            </label>
+
+            <footer>
+                <h3 id="counting"></h3>
+                <div class="btn">
+                <button id="clear" onclick="remove()">clear</button>
+                <button id="next" onclick="next()">Next</button>
+                </div>
+            </footer>
+        </div>
+        <div id="score">
+            <img src="images/win3.gif">
+            <h1>congratulations</h1>
+            <h2 id="result"></h2>
+            <h3 id="attemp"></h3>
+            <button id="replay" onclick="location.reload()">Play Again</button>
+        </div>
+        <script src="js/javascript.js"></script>
+    </body>
+</html>
