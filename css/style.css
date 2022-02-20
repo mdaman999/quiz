@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(-45deg,rgba(208, 4, 248, 0.933),rgba(2, 156, 245, 0.933));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    font-family: 'Roboto Serif', sans-serif;
+}
+#detail{
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+#start,#replay{
+    border: none;
+    margin-top: 50px;
+    border-radius: 10px;
+    letter-spacing: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    background: linear-gradient(-45deg,rgba(208, 4, 248, 0.933),rgba(2, 156, 245, 0.933));
+    color: #fff;
+    box-shadow: 5px 5px 5px rgba(25, 31, 34, 0.33);
+    transition: 0.5s;
+}
+#replay{
+    letter-spacing: 5px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+#start:hover,#replay:hover{
+transform: scale(1.1);
+}
+#container{
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box{
+    width: 100%;
+    height: auto;
+    background-color: rgba(240, 248, 255, 0.555);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgba(240, 248, 255, 0.26);
+}
+footer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    justify-content:end;
+}
+.btn #clear{
+    margin-right: 10px;
+}
+footer .btn button{
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+}
+
+#score{
+    width: 500px;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#score img{
+width: 100%;
+height: 70%;
+}
+#score h1{
+    color: rgb(4, 105, 4);
+}
+
+@media screen and (max-width:767px) {
+    #container{
+        width: 100%;
+    }
+    footer .btn button{
+        letter-spacing: 3px;
+        padding: 5px 10px;
+        font-weight: 300;
+    }
+}
